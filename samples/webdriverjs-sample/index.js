@@ -34,7 +34,8 @@ test.describe('Horizontal line pixel bug', function(){
 
             test.it("should make a screenshot", function () {
                 driver.takeScreenshot().then(function (image, err) {
-                    var filename = config.folders.screenshots + '/out.png';
+                    var date = new Date().toISOString().substring(0, 19);
+                    var filename = config.folders.screenshots + '/editor ' + date + '.png';
 
                     fs.writeFile(filename, image, 'base64', function(err) {
                         if (err) {
