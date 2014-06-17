@@ -1,0 +1,11 @@
+{
+  "name": "casperjs-sample",
+  "version": "0.1.0",
+  "description": "",
+  "main": "search_results_test.js",
+  "scripts": {
+    "test": "casperjs search_results_test.js"
+  },
+  "author": "Yaroslav Serhieiev",
+  "license": "MIT"
+}
