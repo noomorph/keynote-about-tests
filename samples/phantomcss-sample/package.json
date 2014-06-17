@@ -1,0 +1,12 @@
+{
+  "name": "phantomcss-sample",
+  "version": "0.1.0",
+  "description": "",
+  "main": "site44_test.js",
+  "scripts": {
+    "start": "git clone https://github.com/Huddle/PhantomCSS",
+    "test": "casperjs test site44_test.js"
+  },
+  "author": "Yaroslav Serhieiev",
+  "license": "MIT"
+}

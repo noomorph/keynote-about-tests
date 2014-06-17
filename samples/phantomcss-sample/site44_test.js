@@ -1,4 +1,4 @@
-var phantomcss = require('./../phantomcss.js'),
+var phantomcss = require('./PhantomCSS/phantomcss.js'),
     BASE_URL = 'http://question.site44.com/app.html?emin';
 
 phantomcss.init();
