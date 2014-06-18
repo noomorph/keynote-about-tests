@@ -1,0 +1,17 @@
+{
+  "name": "zombiejs-sample",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Yaroslav Serhieiev",
+  "license": "MIT",
+  "devDependencies": {
+    "assert": "^1.1.1",
+    "chai": "^1.9.1",
+    "mocha": "^1.20.1",
+    "zombie": "^2.0.0-alpha31"
+  }
+}
