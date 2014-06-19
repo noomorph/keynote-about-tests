@@ -40,7 +40,6 @@ describe("survey app", function () {
             describe("but age is more than 99", suite_for_invalid('age'));
             describe("but gender is not selected", suite_for_invalid('gender'));
             describe("but not agreed to terms", suite_for_invalid('terms'));
-
         });
     });
 
