@@ -5,7 +5,7 @@
   "main": "site44_test.js",
   "scripts": {
     "start": "git clone https://github.com/Huddle/PhantomCSS",
-    "test": "casperjs test site44_test.js"
+    "test": "casperjs test ./site44_reuse_specs.js"
   },
   "author": "Yaroslav Serhieiev",
   "license": "MIT"

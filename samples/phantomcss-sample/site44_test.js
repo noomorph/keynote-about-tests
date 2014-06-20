@@ -1,7 +1,7 @@
 var phantomcss = require('./PhantomCSS/phantomcss.js'),
     BASE_URL = 'http://question.site44.com/app.html?emin';
 
-phantomcss.init();
+phantomcss.init({ libraryRoot: './PhantomCSS/' });
 casper.start(BASE_URL);
 casper.viewport(1024, 768);
 casper.then(suite_when_visited_page);
