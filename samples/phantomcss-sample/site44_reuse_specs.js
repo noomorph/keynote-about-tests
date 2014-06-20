@@ -34,7 +34,7 @@ casper.start(BASE_URL, function () {
     casper.page.injectJs('includes/chai.js');
     casper.page.injectJs('includes/mocha.js');
     casper.page.injectJs('includes/before-test.js');
-    casper.page.injectJs('specs/walkthrough.js');
+    casper.page.injectJs('specs/code04.js');
     casper.page.injectJs('includes/after-test.js');
 });
 
