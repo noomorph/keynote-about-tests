@@ -1,10 +1,7 @@
 describe("survey app", function () {
     describe_registration_form(function () {
-        compare_screenshots();
-
         when_fields_are_empty(function () {
             after_submit(function () {
-                compare_screenshots();
                 validation_suite_for_registration({
                     name: false,
                     age: false,
@@ -15,10 +12,7 @@ describe("survey app", function () {
         });
 
         when_fields_are_valid(function () {
-            compare_screenshots();
-
             after_submit(function () {
-                compare_screenshots();
                 it("should be relocated to the survey page", function () {
                     location.hash.should.equal("#/questions/1");
                 });
@@ -41,8 +35,6 @@ describe("survey app", function () {
                     });
 
                     describe("when submitted", function () {
-                        compare_screenshots();
-
                         validation_suite_for_registration({
                             name:   field !== 'name',
                             age:    field !== 'age',
@@ -64,17 +56,6 @@ describe("survey app", function () {
             });
 
             innerDescribe();
-        });
-    }
-
-    function compare_screenshots(screenshotName) {
-        it("should display the same things as on baseline screenshot", function (done) {
-            if (typeof mocha.screenshot === "function") {
-                screenshotName = screenshotName || this.test.parent.fullTitle();
-                mocha.screenshot(done, screenshotName);
-            } else {
-                done();
-            }
         });
     }
 

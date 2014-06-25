@@ -2,7 +2,13 @@ var phantomcss = require('./PhantomCSS/phantomcss.js'),
     BASE_URL = 'http://question.site44.com/app.html?emin';
 
 phantomcss.init({ libraryRoot: './PhantomCSS/' });
-casper.start(BASE_URL);
+casper.start(BASE_URL, function () {
+    // HACK: to change the page look
+    casper.evaluate(function () {
+        // document.body.setAttribute("style", "margin-left: 1px");
+    });
+});
+
 casper.viewport(1024, 768);
 casper.then(suite_when_visited_page);
 casper.then(suite_when_clicked_without_filling_form);

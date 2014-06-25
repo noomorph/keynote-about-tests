@@ -27,7 +27,7 @@ casper.on('remote.message', function (message) {
 casper.start(BASE_URL, function () {
     // HACK: to change the page look
     casper.evaluate(function () {
-        document.querySelector("h1").style.visibility = "hidden";
+        // document.querySelector("h1").style.visibility = "hidden";
     });
 
     casper.page.injectJs('includes/WebConsole.js');

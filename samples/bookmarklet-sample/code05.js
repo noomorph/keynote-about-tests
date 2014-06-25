@@ -107,7 +107,6 @@ describe("survey app", function () {
         };
     }
 
-
     RegistrationPageObject.prototype.setName = function (value) {
         this.elements.name.value = value;
         simulateChange(this.elements.name);
